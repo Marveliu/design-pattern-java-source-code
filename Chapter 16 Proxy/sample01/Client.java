@@ -2,6 +2,7 @@ public class Client
 {
 	public static void main(String args[])
 	{
+		// protect proxy
 		AbstractPermission permission;
 		permission=(AbstractPermission)XMLUtil.getBean();
 

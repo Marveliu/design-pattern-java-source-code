@@ -4,6 +4,8 @@ import java.lang.reflect.Method;
 
 public class DynamicProxy implements InvocationHandler
 {
+
+    // ä¸æ˜¯å®ç°åŒä¸€ä¸ªAbstractSubjectæ¥å£
 	private Object obj;
 	
 	public DynamicProxy(){}
@@ -22,11 +24,11 @@ public class DynamicProxy implements InvocationHandler
     }
 
     public void preRequest(){
-    System.out.println("µ÷ÓÃÖ®Ç°£¡");
+    System.out.println("è°ƒç”¨ä¹‹å‰ï¼");
     }
 
     public void postRequest(){
-    System.out.println("µ÷ÓÃÖ®ºó£¡");
+    System.out.println("è°ƒç”¨ä¹‹åï¼");
     }
 
 }
