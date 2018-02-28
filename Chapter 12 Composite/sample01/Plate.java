@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Plate extends MyElement
 {
+	// 容器类
 	private ArrayList list=new ArrayList();
 	
 	public void add(MyElement element)

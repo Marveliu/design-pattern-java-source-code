@@ -2,6 +2,6 @@ public class Banana extends MyElement
 {
 	public void eat()
 	{
-		System.out.println("³ÔÏã½¶£¡");
+		System.out.println("åƒé¦™è•‰ï¼");
 	}
 }
