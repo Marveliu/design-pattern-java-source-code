@@ -1,5 +1,7 @@
 public class Demo
 {
+	// java string flyweight
+	// copy on writing
 	public static void main(String args[])
 	{
 		String str1="abcd";

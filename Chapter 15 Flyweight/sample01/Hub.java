@@ -11,7 +11,6 @@ public class Hub implements NetworkDevice
 	{
 		return this.type;
 	} 
-	
 	public void use()
 	{
 		System.out.println("Linked by Hub, type is " + this.type);

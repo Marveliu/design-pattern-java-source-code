@@ -1,5 +1,7 @@
 public class Port
 {
+	// 外部状态 端口
+	// 内部状态 设备
 	private String port;
 	
 	public Port(String port)

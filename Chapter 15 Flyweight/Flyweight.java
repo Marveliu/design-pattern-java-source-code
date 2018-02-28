@@ -1,7 +1,10 @@
+// 享元工厂
 public class FlyweightFactory
 {
+	// 享元池
 	private static HashMap flyweights = new HashMap();
 	
+	// 单例模式
 	public static Flyweight getFlyweight(String key)
 	{
 		if(flyweights.containsKey(key))
@@ -17,8 +20,11 @@ public class FlyweightFactory
 	}
 }
 
+// 抽象享元类
 public class Flyweight
 {
+	// 内部状态
+	// 相当与一个指针指向享元池
 	private String intrinsicState;
 	
 	public Flyweight(String intrinsicState)
@@ -26,8 +32,8 @@ public class Flyweight
 		this.intrinsicState=intrinsicState;
 	}
 	
+	// 外部状态
 	public void operation(String extrinsicState)
 	{
-		......
 	}	
 }
