@@ -2,12 +2,14 @@ public class Client
 {
 	public static void main(String args[])
 	{
+
+		// å¯¹è±¡é€‚é…å™¨æ¨¡å¼
 		DataOperation dao=(DataOperation)XMLUtil.getBean();
 		dao.setPassword("sunnyLiu");
 		String ps=dao.getPassword();
 		String es=dao.doEncrypt(6,ps);
-		System.out.println("Ã÷ÎÄÎª£º" + ps);
-		System.out.println("ÃÜÎÄÎª£º" + es);
+		System.out.println("æ˜æ–‡ä¸ºï¼š" + ps);
+		System.out.println("å¯†æ–‡ä¸ºï¼š" + es);
 	}
 }
 

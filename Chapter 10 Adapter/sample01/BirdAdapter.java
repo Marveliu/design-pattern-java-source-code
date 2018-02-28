@@ -1,14 +1,17 @@
 public class BirdAdapter extends Bird implements Robot
 {
+
+	// Birdä¸Robotè¿›è¡Œé€‚é…
+
 	public void cry()
 	{
-		System.out.print("»úÆ÷ÈËÄ£·Â£º");
+		System.out.print("æœºå™¨äººæ¨¡ä»¿ï¼š");
 		super.tweedle();
 	}
 	
 	public void move()
 	{
-		System.out.print("»úÆ÷ÈËÄ£·Â£º");
+		System.out.print("æœºå™¨äººæ¨¡ä»¿ï¼š");
 		super.fly();
 	}
 }

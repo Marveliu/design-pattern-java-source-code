@@ -1,5 +1,9 @@
 public class CipherAdapter extends DataOperation
 {
+
+	// target DataOperation
+	// adaptee Caesar
+
 	private Caesar cipher;
 	
 	public CipherAdapter()
