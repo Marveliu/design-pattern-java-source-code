@@ -1,16 +1,20 @@
+
+//å®ç°ç±»
 public interface Implementor
 {
 	public void operationImpl();
 }
 
+// å…·ä½“å®ç°ç±»
 public class ConcreteImplementor implements Implementor
 {
 	public void operationImpl()
 	{
-		//¾ßÌåÊµÏÖ
+		//å…·ä½“å®ç°
 	}
 }
 
+// æŠ½è±¡ç±»
 public abstract class Abstraction
 {
 	protected Implementor impl;
@@ -23,12 +27,13 @@ public abstract class Abstraction
 	public abstract void operation();
 }
 
+// æ‰©å……æŠ½è±¡ç±»
 public class RefinedAbstraction extends Abstraction
 {
 	public void operation()
 	{
-		//´úÂë
+		//ä»£ç 
 		impl.operationImpl();
-		//´úÂë
+		//ä»£ç 
 	}
 }

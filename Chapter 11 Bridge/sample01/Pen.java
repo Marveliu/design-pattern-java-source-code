@@ -1,5 +1,8 @@
 public abstract class Pen
 {
+
+	// 抽象类
+
 	protected Color color;
 	public void setColor(Color color)
 	{
