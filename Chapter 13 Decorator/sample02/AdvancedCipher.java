@@ -5,6 +5,7 @@ public class AdvancedCipher extends CipherDecorator
 		super(cipher);
 	}
 	
+	// 增强了源于的加密方法
 	public String encrypt(String plainText)
 	{
 		String result=super.encrypt(plainText);

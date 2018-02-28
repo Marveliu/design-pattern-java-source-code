@@ -1,5 +1,6 @@
 public class Client
 {
+	// 单纯享元
 	public static void main(String args[])
 	{
 		NetworkDevice nd1,nd2,nd3,nd4,nd5;

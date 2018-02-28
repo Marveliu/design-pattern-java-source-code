@@ -1,13 +1,14 @@
 public class Robot extends Changer
 {
+	// å…·ä½“è£…é¥°ç±»
 	public Robot(Transform transform)
 	{
 		super(transform);
-		System.out.println("±ä³É»úÆ÷ÈË£¡");
+		System.out.println("å˜æˆæœºå™¨äººï¼");
 	}
 	
 	public void say()
 	{
-		System.out.println("Ëµ»°£¡");	
+		System.out.println("è¯´è¯ï¼");	
 	}
 }

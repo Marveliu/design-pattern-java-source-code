@@ -1,5 +1,7 @@
+// 抽象装饰类
 public class Decorator extends Component
 {
+	// 抽象构件成员变量
 	private Component component;
 	
 	public Decorator(Component component)
@@ -13,6 +15,7 @@ public class Decorator extends Component
 	}
 }
 
+// 具体装饰类
 public class ConcreteDecorator extends Decorator
 {
 	public ConcreteDecorator(Component component)

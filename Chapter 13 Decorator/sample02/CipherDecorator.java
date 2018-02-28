@@ -1,5 +1,6 @@
 public class CipherDecorator implements Cipher
 {
+	// 抽象装饰类
 	private Cipher cipher;
 	
 	public CipherDecorator(Cipher cipher)
