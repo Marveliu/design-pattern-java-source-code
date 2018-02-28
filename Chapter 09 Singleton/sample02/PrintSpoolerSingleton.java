@@ -10,18 +10,18 @@ public class PrintSpoolerSingleton
 	{
 		if(instance==null)
 		{
-			System.out.println("´´½¨´òÓ¡³Ø£¡");
+			System.out.println("åˆ›å»ºæ‰“å°æ± ï¼");
 		    instance=new PrintSpoolerSingleton();		
 		}
 		else
 		{
-			throw new PrintSpoolerException("´òÓ¡³ØÕıÔÚ¹¤×÷ÖĞ£¡");
+			throw new PrintSpoolerException("æ‰“å°æ± æ­£åœ¨å·¥ä½œä¸­ï¼");
 		}
 		return instance;
 	}
 	
 	public void manageJobs()
 	{
-	    System.out.println("¹ÜÀí´òÓ¡ÈÎÎñ£¡");
+	    System.out.println("ç®¡ç†æ‰“å°ä»»åŠ¡ï¼");
 	}	
 }

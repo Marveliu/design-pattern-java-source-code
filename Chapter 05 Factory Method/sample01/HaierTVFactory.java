@@ -2,7 +2,7 @@ public class HaierTVFactory implements TVFactory
 {
     public TV produceTV()
     {
-    	System.out.println("º£¶ûµçÊÓ»ú¹¤³§Éú²úº£¶ûµçÊÓ»ú¡£");
+    	System.out.println("æµ·å°”ç”µè§†æœºå·¥åŽ‚ç”Ÿäº§æµ·å°”ç”µè§†æœºã€‚");
     	return new HaierTV();
     }
 }

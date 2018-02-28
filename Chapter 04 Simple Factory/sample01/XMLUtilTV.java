@@ -4,18 +4,18 @@ import org.xml.sax.SAXException;
 import java.io.*;
 public class XMLUtilTV
 {
-    //¸Ã·½·¨ÓÃÓÚ´ÓXMLÅäÖÃÎÄ¼şÖĞÌáÈ¡Æ·ÅÆÃû³Æ£¬²¢·µ»Ø¸ÃÆ·ÅÆÃû³Æ
+    //è¯¥æ–¹æ³•ç”¨äºä»XMLé…ç½®æ–‡ä»¶ä¸­æå–å“ç‰Œåç§°ï¼Œå¹¶è¿”å›è¯¥å“ç‰Œåç§°
 	public static String getBrandName()
 	{
 		try
 		{
-			//´´½¨ÎÄµµ¶ÔÏó
+			//åˆ›å»ºæ–‡æ¡£å¯¹è±¡
 			DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = dFactory.newDocumentBuilder();
 			Document doc;							
 			doc = builder.parse(new File("configTV.xml")); 
 		
-			//»ñÈ¡°üº¬Æ·ÅÆÃû³ÆµÄÎÄ±¾½Úµã
+			//è·å–åŒ…å«å“ç‰Œåç§°çš„æ–‡æœ¬èŠ‚ç‚¹
 			NodeList nl = doc.getElementsByTagName("brandName");
             Node classNode=nl.item(0).getFirstChild();
             String brandName=classNode.getNodeValue().trim();

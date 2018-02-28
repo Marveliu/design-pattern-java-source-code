@@ -2,6 +2,6 @@ public class Attachment
 {
     public void download()
     {
-    	System.out.println("ÏÂÔØ¸½¼ş");	
+    	System.out.println("ä¸‹è½½é™„ä»¶");	
     }
 }

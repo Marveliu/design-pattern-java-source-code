@@ -10,15 +10,15 @@ public class MainClass extends JFrame
 	
     public  MainClass()
     {
-    	super("Ö÷´°Ìå");
+    	super("ä¸»çª—ä½“");
     	Container c=this.getContentPane();
     	c.setLayout(new BorderLayout());
 		
-    	button=new JButton("µã»÷´´½¨Ò»¸öÄÚ²¿´°Ìå");
+    	button=new JButton("ç‚¹å‡»åˆ›å»ºä¸€ä¸ªå†…éƒ¨çª—ä½“");
     	button.addActionListener(new BtListener());
     	c.add(button, BorderLayout.SOUTH);
     	
-    	desktopPane = new JDesktopPane(); //´´½¨desktopPane  
+    	desktopPane = new JDesktopPane(); //åˆ›å»ºdesktopPane  
 		c.add(desktopPane);
     	
     	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -2,7 +2,7 @@ public class HisenseTVFactory implements TVFactory
 {
     public TV produceTV()
     {
-    	System.out.println("º£ÐÅµçÊÓ»ú¹¤³§Éú²úº£ÐÅµçÊÓ»ú¡£");
+    	System.out.println("æµ·ä¿¡ç”µè§†æœºå·¥åŽ‚ç”Ÿäº§æµ·ä¿¡ç”µè§†æœºã€‚");
     	return new HisenseTV();
     }
 }

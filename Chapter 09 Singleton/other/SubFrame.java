@@ -5,32 +5,32 @@ import javax.swing.event.*;
 
 public class SubFrame extends JInternalFrame
 {
-	private static SubFrame frame;//¾²Ì¬ÊµÀı
+	private static SubFrame frame;//é™æ€å®ä¾‹
 	
 	/*
-	 *Ë½ÓĞ¹¹Ôìº¯Êı
+	 *ç§æœ‰æ„é€ å‡½æ•°
 	 */
     private SubFrame()
     {
-    	super("×Ó´°Ìå", true, true, true, false);
-    	this.setLocation(20,20);  //ÉèÖÃÄÚ²¿´°ÌåÎ»ÖÃ  
-    	this.setSize(200,200);  //ÉèÖÃÄÚ²¿´°Ìå´óĞ¡ 
-    	this.addInternalFrameListener(new MyIFListener());//¼àÌı´°ÌåÊÂ¼ş
+    	super("å­çª—ä½“", true, true, true, false);
+    	this.setLocation(20,20);  //è®¾ç½®å†…éƒ¨çª—ä½“ä½ç½®  
+    	this.setSize(200,200);  //è®¾ç½®å†…éƒ¨çª—ä½“å¤§å° 
+    	this.addInternalFrameListener(new MyIFListener());//ç›‘å¬çª—ä½“äº‹ä»¶
     	this.setVisible(true);
     }
     
-    public static SubFrame getFrame()//·µ»Ø´°ÌåÊµÀı
+    public static SubFrame getFrame()//è¿”å›çª—ä½“å®ä¾‹
     {
-    	if(frame==null)//Èç¹û´°Ìå¶ÔÏóÎª¿Õ
+    	if(frame==null)//å¦‚æœçª—ä½“å¯¹è±¡ä¸ºç©º
     	{
-    		frame=new SubFrame();//´´½¨¸Ã´°Ìå£¬·ñÔòÖ±½Ó·µ»Ø´°Ìå
+    		frame=new SubFrame();//åˆ›å»ºè¯¥çª—ä½“ï¼Œå¦åˆ™ç›´æ¥è¿”å›çª—ä½“
     	}
-    	return frame;//·µ»Ø´°Ìå		
+    	return frame;//è¿”å›çª—ä½“		
     }  
     
-    class MyIFListener extends InternalFrameAdapter//ÊÂ¼ş¼àÌıÆ÷
+    class MyIFListener extends InternalFrameAdapter//äº‹ä»¶ç›‘å¬å™¨
     {
-    	//×Ó´°Ìå¹Ø±ÕÊ±£¬½«´°Ìå¶ÔÏóÉèÎªnull
+    	//å­çª—ä½“å…³é—­æ—¶ï¼Œå°†çª—ä½“å¯¹è±¡è®¾ä¸ºnull
     	public void internalFrameClosing(InternalFrameEvent e) 
     	{
     		if(frame!=null)

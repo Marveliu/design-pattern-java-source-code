@@ -5,7 +5,7 @@ public class Client
          try
          {
          	EFactory factory;
-         	Television tv;
+			Television tv;
          	AirConditioner ac;
          	factory=(EFactory)XMLUtil.getBean();
          	tv=factory.produceTelevision();

@@ -1,5 +1,8 @@
 public class KFCWaiter
 {
+
+	// director
+
 	private MealBuilder mb;
 	public void setMealBuilder(MealBuilder mb)
 	{

@@ -11,13 +11,13 @@ public class IdentityCardNo
 	{
 		if(instance==null)
 		{
-			System.out.println("µÚÒ»´Î°ìÀíÉí·İÖ¤£¬·ÖÅäĞÂºÅÂë£¡");
+			System.out.println("ç¬¬ä¸€æ¬¡åŠç†èº«ä»½è¯ï¼Œåˆ†é…æ–°å·ç ï¼");
 		    instance=new IdentityCardNo();
 		    instance.setIdentityCardNo("No400011112222");		
 		}
 		else
 		{
-			System.out.println("ÖØ¸´°ìÀíÉí·İÖ¤£¬»ñÈ¡¾ÉºÅÂë£¡");  
+			System.out.println("é‡å¤åŠç†èº«ä»½è¯ï¼Œè·å–æ—§å·ç ï¼");  
 		}
 		return instance;
 	}

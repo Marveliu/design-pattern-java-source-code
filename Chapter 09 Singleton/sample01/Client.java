@@ -5,14 +5,14 @@ public class Client
 	   IdentityCardNo no1,no2;
 	   no1=IdentityCardNo.getInstance();
        no2=IdentityCardNo.getInstance();
-       System.out.println("Éí·İÖ¤ºÅÂëÊÇ·ñÒ»ÖÂ£º" + (no1==no2));
+       System.out.println("èº«ä»½è¯å·ç æ˜¯å¦ä¸€è‡´ï¼š" + (no1==no2));
        
        String str1,str2;
        str1=no1.getIdentityCardNo();
        str2=no1.getIdentityCardNo();
-       System.out.println("µÚÒ»´ÎºÅÂë£º" + str1);
-       System.out.println("µÚ¶ş´ÎºÅÂë£º" + str2);
-       System.out.println("ÄÚÈİÊÇ·ñÏàµÈ£º" + str1.equalsIgnoreCase(str2));
-       System.out.println("ÊÇ·ñÊÇÏàÍ¬¶ÔÏó£º" + (str1==str2));
+       System.out.println("ç¬¬ä¸€æ¬¡å·ç ï¼š" + str1);
+       System.out.println("ç¬¬äºŒæ¬¡å·ç ï¼š" + str2);
+       System.out.println("å†…å®¹æ˜¯å¦ç›¸ç­‰ï¼š" + str1.equalsIgnoreCase(str2));
+       System.out.println("æ˜¯å¦æ˜¯ç›¸åŒå¯¹è±¡ï¼š" + (str1==str2));
 	}
 }
