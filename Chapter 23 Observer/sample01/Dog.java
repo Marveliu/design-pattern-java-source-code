@@ -2,6 +2,6 @@ public class Dog implements MyObserver
 {
 	public void response()
 	{
-		System.out.println("¹·¸ú×Å½Ğ£¡");
+		System.out.println("ç‹—è·Ÿç€å«ï¼");
 	}	
 }

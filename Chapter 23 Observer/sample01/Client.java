@@ -9,6 +9,7 @@ public class Client
 		obs2=new Mouse();
 		obs3=new Dog();
 		
+		// 注册观察者
 		subject.attach(obs1);
 		subject.attach(obs2);
 		subject.attach(obs3);

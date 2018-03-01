@@ -2,6 +2,8 @@ import java.util.EventObject;
 
 public class LoginEvent extends EventObject
 {
+
+	// 事件类
 	private String userName;
 	private String password;
 	public LoginEvent(Object source,String userName,String password)

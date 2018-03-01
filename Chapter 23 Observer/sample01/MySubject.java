@@ -2,19 +2,20 @@ import java.util.*;
 
 public abstract class MySubject
 {
+	// 鐩爣
 	protected ArrayList observers = new ArrayList();
 	
-	//注册方法
+	//娉ㄥ唽鏂规硶
 	public void attach(MyObserver observer)
 	{
 		observers.add(observer);
 	} 
 	
-	//注销方法
+	//娉ㄩ攢鏂规硶
 	public void detach(MyObserver observer)
 	{
 		observers.remove(observer);
 	}
 	
-	public abstract void cry(); //抽象通知方法
+	public abstract void cry(); //鎶借薄閫氱煡鏂规硶
 }

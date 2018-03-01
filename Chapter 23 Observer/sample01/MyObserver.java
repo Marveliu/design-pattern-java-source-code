@@ -1,4 +1,5 @@
 public interface MyObserver
 {
-	void response();  //³éÏóÏìÓ¦·½·¨
+	// è§‚å¯Ÿè€…
+	void response();  //æŠ½è±¡å“åº”æ–¹æ³•
 }

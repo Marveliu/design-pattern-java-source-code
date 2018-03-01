@@ -7,6 +7,8 @@ public class LoginValidatorA extends JFrame implements LoginEventListener
 	private JPanel p;
 	private LoginBean lb;
 	private JLabel lblLogo;
+
+	// 创建图形界面
 	public LoginValidatorA()
 	{
 		super("Bank of China");
@@ -27,6 +29,9 @@ public class LoginValidatorA extends JFrame implements LoginEventListener
 		this.setSize(600,200);
 		this.setVisible(true);
 	}
+
+
+
 	public void validateLogin(LoginEvent event)
 	{
 		String userName=event.getUserName();
@@ -41,6 +46,8 @@ public class LoginValidatorA extends JFrame implements LoginEventListener
 			JOptionPane.showMessageDialog(this,new String("Valid Login Info!"),"alert",JOptionPane.INFORMATION_MESSAGE);			
 		}
 	}
+
+	
 	public static void main(String args[])
 	{
 		new LoginValidatorA().setVisible(true);

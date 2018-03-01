@@ -1,8 +1,9 @@
 public class Cat extends MySubject
 {
+	// 具体目标类
 	public void cry()
 	{
-		System.out.println("è�У�");
+		System.out.println("猫叫！");
 		System.out.println("----------------------------");		
 		
 		for(Object obs:observers)

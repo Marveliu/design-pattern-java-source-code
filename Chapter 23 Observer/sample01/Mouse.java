@@ -2,6 +2,6 @@ public class Mouse implements MyObserver
 {
 	public void response()
 	{
-		System.out.println("ÀÏÊóÅ¬Á¦ÌÓÅÜ£¡");
+		System.out.println("è€é¼ åŠªåŠ›é€ƒè·‘ï¼");
 	}
 }
