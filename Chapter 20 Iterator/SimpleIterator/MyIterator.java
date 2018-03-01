@@ -13,6 +13,8 @@ interface MyIterator
 class NewCollection implements MyCollection
 {
    private Object[] obj={"dog","pig","cat","monkey","pig"};
+
+   // 工厂
    public MyIterator createIterator()
    {
   	  return new NewIterator();

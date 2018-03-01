@@ -6,6 +6,7 @@ public class SkyworthTelevision implements Television
 		return new SkyworthIterator();
 	}
 
+	// 内部类实现
 	private class SkyworthIterator implements TVIterator
 	{
 	   	private int currentIndex=0;

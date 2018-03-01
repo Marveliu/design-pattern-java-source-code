@@ -1,6 +1,6 @@
 public class TCLTelevision implements Television
 {
-	private Object[] obj={"╨Чдонюйс","╠╠╬╘нюйс","ио╨ёнюйс","╨Ч╠╠нюйс","╨заЗ╫╜нюйс"};
+	private Object[] obj={"Ф╧√Е█≈Е█╚Х╖├","Е▄≈Д╨╛Е█╚Х╖├","Д╦┼Ф╣╥Е█╚Х╖├","Ф╧√Е▄≈Е█╚Х╖├","И╩▒И╬≥Ф╠÷Е█╚Х╖├"};
 	public TVIterator createIterator()
 	{
 		return new TCLIterator();

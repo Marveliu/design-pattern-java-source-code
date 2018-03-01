@@ -3,7 +3,7 @@ public class Client
 	public static void display(Television tv)
 	{
 		TVIterator i=tv.createIterator();
-		System.out.println("电视机频道：");
+		System.out.println("鐢佃鏈洪閬擄細");
 		while(!i.isLast())
 		{
 			System.out.println(i.currentChannel().toString());
@@ -15,7 +15,7 @@ public class Client
 	{
 		TVIterator i=tv.createIterator();
 		i.setChannel(5);
-		System.out.println("逆向遍历电视机频道：");
+		System.out.println("閫嗗悜閬嶅巻鐢佃鏈洪閬擄細");
 		while(!i.isFirst())
 		{
 			i.previous();
