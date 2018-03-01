@@ -2,6 +2,7 @@ import java.util.*;
 
 public class BuyBasket
 {
+	// 对象结构
 	private ArrayList list=new ArrayList();
 	
 	public void accept(Visitor visitor)
