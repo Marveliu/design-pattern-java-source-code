@@ -2,6 +2,6 @@ public class Deposit extends BankTemplateMethod
 {
 	public void transact()
 	{
-		System.out.println("´æ¿î");		
+		System.out.println("å­˜æ¬¾");		
 	}
 }

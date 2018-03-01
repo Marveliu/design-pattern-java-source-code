@@ -2,16 +2,18 @@ public abstract class BankTemplateMethod
 {
     public void takeNumber()
 	{
-		System.out.println("È¡ºÅÅÅ¶Ó¡£");
+		System.out.println("å–å·æ’é˜Ÿã€‚");
 	}
 	
+	// æŠ½è±¡æ–¹æ³•
 	public abstract void transact();
 	
 	public void evaluate()
 	{
-		System.out.println("·´À¡ÆÀ·Ö¡£");
+		System.out.println("åé¦ˆè¯„åˆ†ã€‚");
 	}
 
+	// æ¨¡æ¿æ–¹æ³•
     public void process()
     {
         this.takeNumber();

@@ -2,6 +2,6 @@ public class Transfer extends BankTemplateMethod
 {
 	public void transact()
 	{
-		System.out.println("×ªÕË");		
+		System.out.println("è½¬è´¦");		
 	}
 }

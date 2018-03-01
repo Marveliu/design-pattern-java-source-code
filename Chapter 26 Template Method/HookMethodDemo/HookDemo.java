@@ -1,14 +1,19 @@
 public abstract class HookDemo
 {
+	// æŠ½è±¡æ–¹æ³•
 	public abstract void getData();
 	
+	// å…·ä½“æ–¹æ³•
     public void convertData()
 	{
-		System.out.println("Í¨ÓÃµÄÊı¾İ×ª»»²Ù×÷¡£");
+		System.out.println("é€šç”¨çš„æ•°æ®è½¬æ¢æ“ä½œã€‚");
 	}
 	
+	// æŠ½è±¡æ–¹æ³•
 	public abstract void displayData();
 
+
+	// æ¨¡æ¿æ–¹æ³•
     public void process()
     {
         getData();
@@ -18,7 +23,8 @@ public abstract class HookDemo
         }
    	    displayData();
     }
-    
+	
+	// é’©å­
     public boolean isValid()
     {
     	return true;
@@ -29,12 +35,12 @@ class SubHookDemo extends HookDemo
 {
 	public void getData()
 	{
-		System.out.println("´ÓXMLÅäÖÃÎÄ¼şÖĞ»ñÈ¡Êı¾İ¡£");
+		System.out.println("ä»XMLé…ç½®æ–‡ä»¶ä¸­è·å–æ•°æ®ã€‚");
 	}
 	
 	public void displayData()
 	{
-		System.out.println("ÒÔÖù×´Í¼ÏÔÊ¾Êı¾İ¡£");
+		System.out.println("ä»¥æŸ±çŠ¶å›¾æ˜¾ç¤ºæ•°æ®ã€‚");
 	}
 	
 	public boolean isValid()

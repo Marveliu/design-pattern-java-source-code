@@ -2,6 +2,6 @@ public class Withdraw extends BankTemplateMethod
 {
 	public void transact()
 	{
-		System.out.println("È¡¿î");		
+		System.out.println("å–æ¬¾");		
 	}
 }
