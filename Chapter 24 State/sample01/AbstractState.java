@@ -1,5 +1,8 @@
 public abstract class AbstractState
 {
+
+	// æŠ½è±¡çŠ¶æ€ç±»
+
 	protected ForumAccount acc;
 	protected int point;
 	protected String stateName;
@@ -7,26 +10,26 @@ public abstract class AbstractState
 	
     public void downloadFile(int score)
     {
-    	System.out.println(acc.getName() + "ÏÂÔØÎÄ¼ş£¬¿Û³ı" + score + "»ı·Ö¡£");
+    	System.out.println(acc.getName() + "ä¸‹è½½æ–‡ä»¶ï¼Œæ‰£é™¤" + score + "ç§¯åˆ†ã€‚");
 		this.point-=score;
 		checkState(score);
-		System.out.println("Ê£Óà»ı·ÖÎª£º" + this.point + "£¬µ±Ç°¼¶±ğÎª£º" + acc.getState().stateName + "¡£");
+		System.out.println("å‰©ä½™ç§¯åˆ†ä¸ºï¼š" + this.point + "ï¼Œå½“å‰çº§åˆ«ä¸ºï¼š" + acc.getState().stateName + "ã€‚");
     }
     
 	public void writeNote(int score)
 	{
-		System.out.println(acc.getName() + "·¢²¼ÁôÑÔ" + "£¬Ôö¼Ó" + score + "»ı·Ö¡£");
+		System.out.println(acc.getName() + "å‘å¸ƒç•™è¨€" + "ï¼Œå¢åŠ " + score + "ç§¯åˆ†ã€‚");
 		this.point+=score;
 		checkState(score);
-		System.out.println("Ê£Óà»ı·ÖÎª£º" + this.point + "£¬µ±Ç°¼¶±ğÎª£º" + acc.getState().stateName + "¡£");
+		System.out.println("å‰©ä½™ç§¯åˆ†ä¸ºï¼š" + this.point + "ï¼Œå½“å‰çº§åˆ«ä¸ºï¼š" + acc.getState().stateName + "ã€‚");
 	}
 	
 	public void replyNote(int score)
 	{
-		System.out.println(acc.getName() + "»Ø¸´ÁôÑÔ£¬Ôö¼Ó" + score + "»ı·Ö¡£");
+		System.out.println(acc.getName() + "å›å¤ç•™è¨€ï¼Œå¢åŠ " + score + "ç§¯åˆ†ã€‚");
 		this.point+=score;
 		checkState(score);
-	    System.out.println("Ê£Óà»ı·ÖÎª£º" + this.point + "£¬µ±Ç°¼¶±ğÎª£º" + acc.getState().stateName + "¡£");
+	    System.out.println("å‰©ä½™ç§¯åˆ†ä¸ºï¼š" + this.point + "ï¼Œå½“å‰çº§åˆ«ä¸ºï¼š" + acc.getState().stateName + "ã€‚");
 	}
 	
 	public void setPoint(int point) {

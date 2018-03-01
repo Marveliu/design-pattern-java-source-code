@@ -1,5 +1,7 @@
 class Switch
 {
+
+	// çŠ¶æ€å…±äº«
 	private static State state,onState,offState;
 	private String name;
 	
@@ -51,12 +53,12 @@ class OnState extends State
 {
 	public void on(Switch s)
 	{
-		System.out.println("ÒÑ¾­´ò¿ª£¡");
+		System.out.println("å·²ç»æ‰“å¼€ï¼");
 	}
 	
 	public void off(Switch s)
 	{
-		System.out.println("¹Ø±Õ£¡");
+		System.out.println("å…³é—­ï¼");
 		s.setState(Switch.getState("off"));
 		
 	}
@@ -66,13 +68,13 @@ class OffState extends State
 {
 	public void on(Switch s)
 	{
-		System.out.println("´ò¿ª£¡");
+		System.out.println("æ‰“å¼€ï¼");
 		s.setState(Switch.getState("on"));
 	}
 	
 	public void off(Switch s)
 	{
-		System.out.println("ÒÑ¾­¹Ø±Õ£¡");
+		System.out.println("å·²ç»å…³é—­ï¼");
 	}
 }
 
@@ -81,8 +83,8 @@ class Client
 	public static void main(String args[])
 	{
 		Switch s1,s2;
-		s1=new Switch("¿ª¹Ø1");
-		s2=new Switch("¿ª¹Ø2");
+		s1=new Switch("å¼€å…³1");
+		s2=new Switch("å¼€å…³2");
 		
 		s1.on();
 		s2.on();

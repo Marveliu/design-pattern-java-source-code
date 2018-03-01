@@ -1,12 +1,16 @@
 public class ForumAccount
 {
+
+	// 上下文类
+
 	private AbstractState state;
 	private String name;
+
 	public ForumAccount(String name)
 	{
 		this.name=name;
 		this.state=new PrimaryState(this);
-		System.out.println(this.name + "ע��ɹ���");	
+		System.out.println(this.name + "注册成功！");	
 		System.out.println("---------------------------------------------");	
 	}
 	

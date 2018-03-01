@@ -2,7 +2,7 @@ public class Client
 {
 	public static void main(String args[])
 	{
-		ForumAccount account=new ForumAccount("ÕÅÈý");
+		ForumAccount account=new ForumAccount("å¼ ä¸‰");
 		account.writeNote(20);
 		System.out.println("--------------------------------------");
 		account.downloadFile(20);
