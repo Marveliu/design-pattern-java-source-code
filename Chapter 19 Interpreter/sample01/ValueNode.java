@@ -1,5 +1,6 @@
 public class ValueNode implements Node
 {
+	// 终结
 	private int value;
 	
 	public ValueNode(int value)

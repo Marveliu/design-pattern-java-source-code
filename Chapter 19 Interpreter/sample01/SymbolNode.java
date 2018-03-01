@@ -1,5 +1,6 @@
 public abstract class SymbolNode implements Node
 {
+	// 非终结
 	protected Node left;
 	protected Node right;
 	

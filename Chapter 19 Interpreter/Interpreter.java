@@ -7,12 +7,13 @@ public class TerminalExpression extends AbstractExpression
 {
 	public void interpret(Context ctx)
 	{
-		//¶ÔÓÚÖÕ½á·û±í´ïÊ½µÄ½âÊÍ²Ù×÷
+		//å¯¹äºç»ˆç»“ç¬¦è¡¨è¾¾å¼çš„è§£é‡Šæ“ä½œ
 	}
 }
 
 public class NonterminalExpression extends AbstractExpression
 {
+	// ä¸¤ä¸ªå…ƒç´ çš„ |
 	private AbstractExpression left;
 	private AbstractExpression right;
 	
@@ -24,7 +25,7 @@ public class NonterminalExpression extends AbstractExpression
 	
 	public void interpret(Context ctx)
 	{
-		//µİ¹éµ÷ÓÃÃ¿Ò»¸ö×é³É²¿·ÖµÄinterpret()·½·¨
-		//ÔÚµİ¹éµ÷ÓÃÊ±Ö¸¶¨×é³É²¿·ÖµÄÁ¬½Ó·½Ê½£¬¼´·ÇÖÕ½á·ûµÄ¹¦ÄÜ
+		//é€’å½’è°ƒç”¨æ¯ä¸€ä¸ªç»„æˆéƒ¨åˆ†çš„interpret()æ–¹æ³•
+		//åœ¨é€’å½’è°ƒç”¨æ—¶æŒ‡å®šç»„æˆéƒ¨åˆ†çš„è¿æ¥æ–¹å¼ï¼Œå³éç»ˆç»“ç¬¦çš„åŠŸèƒ½
 	}	
 }
