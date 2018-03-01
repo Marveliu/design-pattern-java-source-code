@@ -9,7 +9,7 @@ public class Client
 	   Sort sort;
        sort=(Sort)XMLUtil.getBean();
        
-       ah.setSortObj(sort); //设置具体策略
+       ah.setSortObj(sort); //璁剧疆鍏蜂綋绛栫暐
        result=ah.sort(arr);
        
        for(int i=0;i<result.length;i++)

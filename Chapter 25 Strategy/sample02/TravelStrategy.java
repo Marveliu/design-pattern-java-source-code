@@ -9,7 +9,7 @@ class AirplaneStrategy implements  TravelStrategy
 {	
 	public void travelMethod()
 	{
-		System.out.println("·É»úÓÎ£¡");
+		System.out.println("é£æœºæ¸¸ï¼");
 	}
 }
 
@@ -17,7 +17,7 @@ class TrainStrategy implements  TravelStrategy
 {
 	public void travelMethod()
 	{
-		System.out.println("»ğ³µÓÎ£¡");
+		System.out.println("ç«è½¦æ¸¸ï¼");
 	}
 }
 
@@ -25,7 +25,7 @@ class SelfTravelStrategy implements  TravelStrategy
 {
 	public void travelMethod()
 	{
-		System.out.println("×Ô¼İÓÎ£¡");
+		System.out.println("è‡ªé©¾æ¸¸ï¼");
 	}
 }
 
@@ -33,7 +33,7 @@ class BicycleTravelStrategy implements  TravelStrategy
 {
 	public void travelMethod()
 	{
-		System.out.println("×ÔĞĞ³µÓÎ£¡");
+		System.out.println("è‡ªè¡Œè½¦æ¸¸ï¼");
 	}
 }
 

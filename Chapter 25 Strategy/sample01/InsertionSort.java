@@ -18,7 +18,7 @@ public class InsertionSort implements Sort
            }
            arr[j]=temp;
 		}
-		System.out.println("²åÈëÅÅĞò");
+		System.out.println("æ’å…¥æ’åº");
 		return arr;
 	}
 }

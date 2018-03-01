@@ -2,7 +2,7 @@ public class QuickSort implements Sort
 {
 	public int[] sort(int arr[])
 	{
-		System.out.println("¿ìËÙÅÅĞò");
+		System.out.println("å¿«é€Ÿæ’åº");
 		sort(arr,0,arr.length-1);
 		return arr;
 	}

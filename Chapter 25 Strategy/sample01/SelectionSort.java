@@ -20,7 +20,7 @@ public class SelectionSort implements Sort
            arr[samllestLocation]=arr[i];
            arr[i]=temp;
        }
-       System.out.println("Ñ¡ÔñÅÅĞò");
+       System.out.println("é€‰æ‹©æ’åº");
        return arr;
 	}
 }
