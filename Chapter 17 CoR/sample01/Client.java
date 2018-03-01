@@ -4,25 +4,26 @@ public class Client
 	{
 		Leader objDirector,objManager,objGeneralManager,objViceGeneralManager;
 		
-		objDirector=new Director("ÍõÃ÷");
-		objManager=new Manager("ÕÔÇ¿");
-		objGeneralManager=new GeneralManager("Àî²¨");
-		objViceGeneralManager=new ViceGeneralManager("Ğ¤ºì");
+		// æ³¨å†Œè´£ä»»é“¾
+		objDirector=new Director("ç‹æ˜");
+		objManager=new Manager("èµµå¼º");
+		objGeneralManager=new GeneralManager("ææ³¢");
+		objViceGeneralManager=new ViceGeneralManager("è‚–çº¢");
 		
 		objDirector.setSuccessor(objManager);
 		objManager.setSuccessor(objViceGeneralManager);
 		objViceGeneralManager.setSuccessor(objGeneralManager);
 			
-		LeaveRequest lr1=new LeaveRequest("ÕÅÈı",2);
+		LeaveRequest lr1=new LeaveRequest("å¼ ä¸‰",2);
 		objDirector.handleRequest(lr1);
 			
-		LeaveRequest lr2=new LeaveRequest("ÀîËÄ",5);
+		LeaveRequest lr2=new LeaveRequest("æå››",5);
 		objDirector.handleRequest(lr2);
 		
-		LeaveRequest lr3=new LeaveRequest("ÍõÎå",15);
+		LeaveRequest lr3=new LeaveRequest("ç‹äº”",15);
 		objDirector.handleRequest(lr3);
 						
-		LeaveRequest lr4=new LeaveRequest("ÕÔÁù",25);
+		LeaveRequest lr4=new LeaveRequest("èµµå…­",25);
 		objDirector.handleRequest(lr4);			
 	}
 }

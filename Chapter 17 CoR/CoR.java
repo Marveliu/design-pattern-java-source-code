@@ -1,5 +1,6 @@
 public abstract class Handler
 {
+	// æŒ‡å‘ä¸‹ä¸€ä¸ªæŠ½è±¡å¤„ç†ç±»
 	protected Handler successor;
 	
 	public void setSuccessor(Handler successor)
@@ -14,13 +15,13 @@ public class ConcreteHandler extends Handler
 {
 	public void handleRequest(String request)
 	{
-		if(ÇëÇórequestÂú×ãÌõ¼ş)
+		if(è¯·æ±‚requestæ»¡è¶³æ¡ä»¶)
 		{
-			......  //´¦ÀíÇëÇó£»
+			  //å¤„ç†è¯·æ±‚ï¼›
 		}
 		else
 		{
-			this.successor.handleRequest(request); //×ª·¢ÇëÇó
+			this.successor.handleRequest(request); //è½¬å‘è¯·æ±‚
 		}
 	}
 }
