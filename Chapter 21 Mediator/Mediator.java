@@ -1,5 +1,8 @@
 public abstract class Mediator
 {
+	// mediator
+
+	// colleague storage
 	protected ArrayList colleagues;
 	public void register(Colleague colleague)
 	{
@@ -12,6 +15,7 @@ public abstract class Mediator
 
 public abstract class Colleague
 {
+	// refer mediator
 	protected Mediator mediator;
 	
 	public Colleague(Mediator mediator)
@@ -26,11 +30,11 @@ public abstract class Colleague
 
 public class ConcreteMediator extends Mediator
 {
+	
 	public void operation()
 	{
-		......
 		((Colleague)(colleagues.get(0))).method1();
-		......
+		
 	}
 }
 
@@ -41,11 +45,12 @@ public class ConcreteColleague extends Colleague
 		super(mediator);
 	}
 	
+	// insider method
 	public void method1()
 	{
-		......
 	}
 	
+	// dependency method
 	public void method2()
 	{
 		mediator.operation1();

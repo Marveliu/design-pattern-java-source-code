@@ -2,6 +2,7 @@ import java.util.*;
 
 public class ChatGroup extends AbstractChatroom
 {
+	// 具体中介类
 	private Hashtable members=new Hashtable();
 	
 	public void register(Member member)
@@ -17,17 +18,17 @@ public class ChatGroup extends AbstractChatroom
    {
    	  Member member=(Member)members.get(to);
    	  String newMessage=message;
-   	  newMessage=message.replaceAll("��","*");
+   	  newMessage=message.replaceAll("日","*");
 	  member.receiveText(from,newMessage);
    }
    
    public void sendImage(String from,String to,String image)
    {
    	  Member member=(Member)members.get(to);
-   	  //ģ��ͼƬ��С�ж�
+   	  //模拟图片大小判断
    	  if(image.length()>5)
    	  {
-   	  	  System.out.println("ͼƬ̫�󣬷���ʧ�ܣ�");
+   	  	  System.out.println("图片太大，发送失败！");
    	  }
    	  else
    	  {
