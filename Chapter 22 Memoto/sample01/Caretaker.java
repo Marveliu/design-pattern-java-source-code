@@ -2,6 +2,7 @@ package dp.memento;
 
 public class Caretaker
 {
+	// caretaker
 	private Memento memento;
 	public Memento getMemento()
 	{

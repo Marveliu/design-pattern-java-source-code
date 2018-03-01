@@ -2,6 +2,7 @@ package dp.memento;
 
 public class UserInfoDTO
 {
+	// orinator
 	private String account;
 	private String password;
 	private String telNo;
